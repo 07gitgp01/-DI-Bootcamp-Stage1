@@ -21,11 +21,14 @@ Hello World
 Hlrolelwod
 """
 # Voir code ci-dessous:
+import random # Module comportant la fonctionnalité "shuffle"
+
 # déclarations des variables
 taillecaracteres = 10
 mot=""
 motliste = []
 motrecup = ""
+motrecu = ""
 
 ### 1.)
 while not (bool(len(mot) == taillecaracteres)):
@@ -45,11 +48,16 @@ if (True):
 ### 3.)
 for nt in mot:
     motliste.append(nt)
-    
+
 for i in range(len(motliste)):
     motrecup += motliste[i]+" " 
-    print(motrecup)
+    print(motrecup,"\n\n")
+    
+random.shuffle(motliste) # motliste sera mélangéé
 
+for j in range(1, taillecaracteres + 1):
+    motrecu += motliste[j - 1]+" " 
+    print(motrecu)
 
 
 

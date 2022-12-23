@@ -1,19 +1,18 @@
 # Prédire le résultat des extraits de code suivants :
-"""
->>> 5 < 3
-False
 
->>> 3 == 3
-True
+print("\n>>> 5 < 3")
+print("False\n\n")
 
->>> 3 == "3"
-False
+print(">>> 3 == 3")
+print("True\n\n")
 
->>> "3" > 3
-TypeError
+print('>>> 3 == "3"')
+print("False\n\n")
 
->>> "Hello" == "hello"
-False
+print('>>> "3" > 3')
+print("TypeError\n\n")
+
+print('>>> "Hello" == "hello"')
+print("False")
     
     
-    """
