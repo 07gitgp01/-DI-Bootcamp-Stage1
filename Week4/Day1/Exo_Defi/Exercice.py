@@ -43,7 +43,7 @@ while not (bool(len(mot) == taillecaracteres)):
 
 ### 2.)
 if (True):
-    print (f"\nLa première lettre de la chaine est <{mot[0]}> et la dernière lettre est <{mot[-1]}> !")
+    print (f"\nLa première lettre de la chaine est <{mot[0]}> et la dernière lettre est <{mot[-1]}> !\n\n")
 
 ### 3.)
 for nt in mot:
@@ -51,13 +51,13 @@ for nt in mot:
 
 for i in range(len(motliste)):
     motrecup += motliste[i]+" " 
-    print(motrecup,"\n\n")
+    print(motrecup,"\n")
     
 random.shuffle(motliste) # motliste sera mélangéé
 
 for j in range(1, taillecaracteres + 1):
     motrecu += motliste[j - 1]+" " 
-    print(motrecu)
+    print(motrecu,"\n")
 
 
 

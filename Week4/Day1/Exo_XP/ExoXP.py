@@ -11,7 +11,7 @@ Hello world
 Hello world
 """
 # Voir code ci-dessous:
-print("Hello world\nHello world\nHello world\nHello world\nHello world")
+print("Hello world\n"*4)
 
 ##########################################################################
 print(f"\n\n\n{'='*100}\nExercice 2 : Quelques Maths\n\n")
@@ -24,17 +24,8 @@ Ecrire un code qui calcule le résultat de : (99^3) * 8(99 à la puissance 3 foi
 
 # Voir code ci-dessous:
 rlt=(99**3)*8
-rep = input("Voulez vous voir le résultat de (99**3)*8 ? : ")
-while (rep.lower() == 'y' or rep.lower() == 'n' ):
-    if (rep.lower() == 'y'):
-        print(f"Le résultat est : {rlt}")
-        break
-    if (rep.lower() == 'n'):
-        #print("Continuons alors\n")
-        break
-if not (rep.lower() == 'y' or rep.lower() == 'n' ):
-    print("Entrez correctement la réponse\n")
-    rep = input("Voulez vous voir le résultat de (99**3)*8 ?\n'Y' ou 'N' : ")
+print(f"Le résultat de : (99^3) * 8(99 à la puissance 3 fois 8) est : {rlt}")
+
 
 
 
