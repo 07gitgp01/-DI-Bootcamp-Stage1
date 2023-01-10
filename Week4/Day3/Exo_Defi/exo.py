@@ -17,10 +17,16 @@ Exemples
 
 """ 
 ### Code ci-dessous:
+#from string import ascii_letters
+import re
 print("************************ DEFI1 *********************************")
 dic1 = {}
 dic2 = {}
-word = input("Entrez une chaine de caractère\nChaine: ")
+word = ""
+text = input("Entrez une chaine de caractère\nChaine: ")
+liste = re.findall("[A-Za-z]", text)
+for i in liste:
+    word +=i
 for ind, val in enumerate (word):
     if not (val in dic1.keys()):
         dic1[val] = [ind]
@@ -30,6 +36,7 @@ for ind, val in enumerate (word):
         dic2[val] += [ind] 
     else:
         continue
+        
 print(dic1)
         
 

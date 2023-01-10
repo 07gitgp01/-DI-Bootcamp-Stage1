@@ -15,18 +15,15 @@ Decoder cette matrix
 """
 from string import ascii_letters
 ### Code ci-dessous:
+from string import ascii_letters
+
 text = '7i3Tsih%xi #sM $a #t%^r!'
 mot = ""
+k = ""
 line1 = []
 line2 = []
 line3 = []
 matrix = list(text)
-# for i in range(0, 8):
-#     line1.append(matrix[i])
-# for i in range(8, 16):
-#     line2.append(matrix[i])
-# for i in range(16, 24):
-#     line3.append(matrix[i])
 matrixi = []
 for i in range(3):
     if i == 0:
@@ -39,23 +36,17 @@ for i in range(3):
         line3 = [matrix[j] for j in range(i, len(matrix), 3)]
         matrixi.append(line3)
         
-
-
-print(line1)
-print(line2)
-print(line3)
-print(matrixi)
 for i in matrixi:
-    for j in matrixi[i]:
-        k = matrixi[i]
-        if j in ascii_letters:
-            mot +=j
+    for j in range(len(i)):
+        #k = matrixi[i]
+        if i[j] in ascii_letters:
+            mot +=i[j]
         else:
-            while True:
-                if k.index(j) == 0:
-                    pass
-                elif matrixi[i][k.index(j)+1] :
-                    n=0
+            if j == 0 or j == (len(i)-1):
+                continue
+            else:
+                k = " "
+            mot +=k
+        
 
-
-#print(block1)
+print("\nLe mot caché est: ", mot)
