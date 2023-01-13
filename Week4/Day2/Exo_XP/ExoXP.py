@@ -79,6 +79,7 @@ Créez une liste contenant la séquence suivante 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 
 ### Code ci-dessous
 print("*Un float est un nombre à virgule.\nA la différence avec le float qui réserve beaucoup plus d'espace mémoire pour une variable donnée, un entier permet à une variable \nd'avoir un espace mémoire moins important.")
 print("\n*Une autre façon de générer une séquence de flottants serait de faire une concaténation de la façon \nsuivante <float(str('partie entière'+'.'+'partie décimale'))>\nPar exemple : \n>>>float(str('25'+'.'+'05')) donne : 25.05")
+
 # list = ['1.5', '2', '2.5', '3', '3.5', '4', '4.5', '5']
 # print("\n*La liste des flottants est :\n", list)
 #####################################################################################
