@@ -1,3 +1,5 @@
+#####################################################################################
+print(f"\n\n\n{'='*100}\n🌟 Exercise 1: Cats\n\n")
 
 """"
 🌟 Exercise 1: Cats
@@ -13,7 +15,6 @@ Outside of the class, create a function that finds the oldest cat and returns th
 Print the following string: “The oldest cat is <cat_name>, and is <cat_age> years old.”. Use the function previously created.
 """
 ### Code ci-dessous
-"""
 class Cat:
     def __init__(self, cat_name, cat_age):
         self.name = cat_name
@@ -42,8 +43,9 @@ def max(a, b):
 rslt = incl(max(max(first_cat.age, second_cat.age), third_cat.age))
 #print(rslt)
 print(f"The oldest cat is {rslt[0]}, and is {rslt[1]} years old")
-"""    
 
+#####################################################################################
+print(f"\n\n\n{'='*100}\n🌟 Exercise 2 : Dogs\n\n")
 """
 🌟 Exercise 2 : Dogs
 Instructions
@@ -58,7 +60,6 @@ Print the details of her dog (ie. name and height) and call the methods bark and
 Create an if statement outside of the class to check which dog is bigger. Print the name of the bigger dog.
 """
 ### Code ci-dessous:
-"""
 # 1/
 class Dog:
     # 2/*
@@ -90,10 +91,10 @@ elif (davids_dog.height > sarahs_dog.height):
     print(f"\n{davids_dog.name} is bigger than {sarahs_dog.name} ")
 else:
     print(f"\n{davids_dog.name} is as bigger as {sarahs_dog.name} ")
-    
-"""
 
 
+#####################################################################################
+print(f"\n\n\n{'='*100}\n🌟 Exercise 3 : Who’s The Song Producer?\n\n")
 
 """
 🌟 Exercise 3 : Who’s The Song Producer?
@@ -113,7 +114,7 @@ all that glitters is gold
 and she’s buying a stairway to heaven
 """
 ### Code ci-dessous:
-"""# 1/
+# 1/
 class Song:
     def __init__(self, lyrics):
         self.lyrics = lyrics
@@ -125,8 +126,9 @@ class Song:
 stairway= Song(["There’s a lady who's sure","all that glitters is gold", "and she’s buying a stairway to heaven"])
 
 stairway.sing_me_a_song()
-"""
 
+#####################################################################################
+print(f"\n\n\n{'='*100}\n🌟 Exercise 4 : Afternoon At The Zoo\n\n")
 
 """
 Exercise 4 : Afternoon At The Zoo
